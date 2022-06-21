@@ -1,0 +1,31 @@
+﻿@model Game 
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-secondary">Dodaj Grę</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name">Nazwa</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description">Opis</label>
+            <input asp-for="Description" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Producer">Producent</label>
+            <input asp-for="Producer" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="CategoryId">Kategoria</label>
+            <input asp-for="CategoryId" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:150px">Dodaj</button>
+        <a asp-controller="Game" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Powrót
+        </a>
+    </div>
+</form>
